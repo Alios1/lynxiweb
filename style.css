@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #FF9500; /* El Naranja de tu App */
+    --text-color: #1a1a1a;
+    --bg-color: #ffffff;
+    --secondary-bg: #f5f5f7; /* Gris estilo Apple */
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    background: radial-gradient(circle at top right, #fff4e6 0%, #ffffff 40%);
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: black; /* Botón App Store suele ser negro */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background-color: #333;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 300px; /* Tamaño de un iPhone */
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border: 8px solid #000; /* Borde falso de iPhone */
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 0;
+    background-color: var(--secondary-bg);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* LEGAL PAGES */
+.legal-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.legal-content h1 { margin-bottom: 40px; font-size: 2.5rem; }
+.legal-content h2 { margin-top: 30px; margin-bottom: 15px; }
+.legal-content ul { margin-left: 20px; margin-bottom: 20px; }
+
+/* FOOTER */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    color: #666;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
+    .hero-text { margin-bottom: 40px; }
+    .hero h1 { font-size: 2.5rem; }
+}
