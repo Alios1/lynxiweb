@@ -164,6 +164,15 @@ footer a {
     margin: 0 10px;
     text-decoration: none;
 }
+/* Estilo para botón "Coming Soon" */
+.cta-button.coming-soon {
+    background-color: #8e8e93; /* Gris clásico de Apple */
+    cursor: default; /* El mouse no cambia a manita */
+    pointer-events: none; /* Bloquea el clic */
+    box-shadow: none;
+    transform: none; /* Quita la animación de movimiento */
+    opacity: 0.8;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
