@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Glix</title>
+    <title>Privacy Policy - Lynxi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,42 +11,105 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">GLIX</a>
+            
+                    <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="images/logo.png" alt="Logo Lynxi" style="height: 40px; width: auto;">
+                        
+                        <span style="font-size: 1.5rem; font-weight: 800; color: #FF9500;">Lynxi</span>
+                    </a>
                 <div class="nav-links">
-                    <a href="index.html">Volver al Inicio</a>
+                    <a href="index.html">Back to Home</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main class="container legal-content">
-        <h1>Política de Privacidad</h1>
-        <p>Última actualización: 20 de Enero, 2026</p>
+        <h1>Privacy Policy</h1>
+        <p>Last Updated: January 20, 2026</p>
 
-        <h2>1. Introducción</h2>
-        <p>En Glix ("nosotros", "nuestro"), respetamos su privacidad y estamos comprometidos a protegerla mediante el cumplimiento de esta política.</p>
+        <h2>1. INTRODUCTION</h2>
+        <p>Welcome to <strong>Lynxi</strong> ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application (the "App").</p>
+        <p>By downloading or using Lynxi, you agree to the terms of this Privacy Policy.</p>
 
-        <h2>2. Información que recopilamos</h2>
-        <p>Nuestra aplicación recopila la siguiente información para funcionar correctamente:</p>
+        <h2>2. INFORMATION WE COLLECT</h2>
+        <p>We prioritize data minimization. We currently do not require you to create an account to use the App. We process the following types of data to provide our services:</p>
+
+        <h3>A. Image Data (Camera and Photos)</h3>
         <ul>
-            <li><strong>Imágenes:</strong> Cuando usa la función de escaneo visual, las imágenes se procesan temporalmente para identificar productos.</li>
-            <li><strong>Historial de Búsqueda:</strong> Guardamos sus consultas para mejorar su experiencia y permitirle recuperar precios anteriores.</li>
-            <li><strong>Datos de Uso:</strong> Recopilamos datos anónimos sobre cómo interactúa con la app para mejorar el servicio.</li>
+            <li><strong>What we collect:</strong> To use the visual search feature, you provide us with images taken via your device's camera or selected from your photo library.</li>
+            <li><strong>How we use it:</strong> These images are transmitted securely to our AI service provider (Google Vertex AI) solely for the purpose of analyzing the image to identify products and extract text.</li>
+            <li><strong>Storage:</strong> We <strong>do not</strong> permanently store your photos on our servers. Images are processed transiently; once the analysis is complete and the search results are returned, the image data is discarded from our processing pipeline.</li>
         </ul>
 
-        <h2>3. Uso de la Información</h2>
-        <p>Utilizamos la información recopilada para proporcionar comparativas de precios, mejorar nuestros algoritmos de IA y gestionar su cuenta Premium (si aplica).</p>
+        <h3>B. Text Queries</h3>
+        <p>We collect the text queries you type into the search bar to fetch product results and price comparisons.</p>
 
-        <h2>4. Compartir información</h2>
-        <p>No vendemos sus datos personales a terceros. Compartimos datos anónimos con proveedores de servicios (como Google Cloud o RevenueCat) estrictamente necesarios para el funcionamiento de la app.</p>
+        <h3>C. Usage and Device Data (Anonymous)</h3>
+        <p>We use <strong>Google Analytics for Firebase</strong> to collect anonymous data about how you use the App. This includes:</p>
+        <ul>
+            <li>Device attributes (model, OS version).</li>
+            <li>Crash reports (to help us fix bugs).</li>
+            <li>Interaction metrics (e.g., number of searches performed, screens viewed).</li>
+        </ul>
+        <p>This data is aggregated and does not identify you personally.</p>
 
-        <h2>5. Contacto</h2>
-        <p>Si tiene preguntas sobre esta política, contáctenos en: soporte@glixapp.com</p>
+        <h3>D. Subscription and Purchase Data</h3>
+        <ul>
+            <li><strong>Payment Processing:</strong> All financial transactions are handled directly by Apple (App Store). We do not collect, store, or have access to your credit card information or billing address.</li>
+            <li><strong>Subscription Management:</strong> We use <strong>RevenueCat</strong>, a third-party service, to manage subscription status and validate your purchase receipts. RevenueCat receives an anonymous App User ID and data related to your specific purchase (e.g., expiration date, product ID) to unlock the premium features on your device.</li>
+        </ul>
+
+        <h2>3. HOW WE USE YOUR INFORMATION</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>To provide the Service:</strong> Identifying products via AI and finding prices based on your inputs.</li>
+            <li><strong>To manage your Subscription:</strong> Verifying via RevenueCat that you have a valid active subscription.</li>
+            <li><strong>To improve the App:</strong> Analyzing crash reports and usage trends to fix stability issues and enhance user experience.</li>
+            <li><strong>To enforce Terms:</strong> Ensuring usage limits (e.g., free tier limits) are respected.</li>
+        </ul>
+
+        <h2>4. DATA SHARING AND THIRD PARTIES</h2>
+        <p>We do not sell your personal data. We share data only with the trusted third-party service providers necessary to operate the App:</p>
+        <ul>
+            <li><strong>Google Cloud (Vertex AI / Gemini):</strong> Processes image and text queries to generate search results.</li>
+            <li><strong>Google Analytics for Firebase:</strong> Processes anonymous usage and crash data.</li>
+            <li><strong>RevenueCat:</strong> Processes purchase receipt data to manage subscription entitlements.</li>
+            <li><strong>Affiliate Partners:</strong> If you click on a product link (e.g., to Amazon or Mercado Libre), you are redirected to a third-party site. These sites may place cookies on your device to track the referral. We are not responsible for the privacy practices of these third-party retailers.</li>
+            <li><strong>Legal Requirements:</strong> We may disclose information if required by law.</li>
+        </ul>
+
+        <h2>5. DATA RETENTION</h2>
+        <ul>
+            <li><strong>Images:</strong> Deleted immediately after processing.</li>
+            <li><strong>Search History:</strong> Saved locally on your device for your convenience. You can clear this history within the App settings.</li>
+            <li><strong>Analytics Data:</strong> Retained for a limited period as defined by Google Analytics policies to analyze trends.</li>
+        </ul>
+
+        <h2>6. CHILDREN’S PRIVACY</h2>
+        <p>Lynxi is not intended for use by anyone under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal data from a child without verification of parental consent, we will take steps to remove that information.</p>
+
+        <h2>7. YOUR RIGHTS</h2>
+        <p>Depending on your location (including users in Mexico), you may have certain rights regarding your data:</p>
+        <ul>
+            <li><strong>Access and Deletion:</strong> Since we do not use user accounts, we do not hold personal data linked to your identity (name, email). You can delete the App to remove all locally stored data.</li>
+            <li><strong>Opt-out:</strong> You can opt-out of analytics collection through your iOS device settings (Settings > Privacy > Analytics & Improvements).</li>
+        </ul>
+
+        <h2>8. INTERNATIONAL DATA TRANSFERS</h2>
+        <p>Your information may be transferred to and processed on computers located outside of your state, province, country, or other governmental jurisdiction (such as Google Cloud servers in the US) where the data protection laws may differ from those of your jurisdiction.</p>
+
+        <h2>9. CHANGES TO THIS PRIVACY POLICY</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. Your continued use of the App constitutes acceptance of those changes.</p>
+
+        <h2>10. CONTACT US</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+        <strong>[Insert Support Email Here]</strong></p>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Glix App.</p>
+            <p>&copy; 2026 Lynxi App.</p>
         </div>
     </footer>
 
