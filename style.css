@@ -174,6 +174,139 @@ footer a {
     opacity: 0.8;
 }
 
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS DEL BLOG
+   ========================================================================== */
+
+.blog-container {
+    max-width: 740px; /* Ancho óptimo de lectura para legibilidad de artículos largos */
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.blog-post h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.blog-post h1 .highlight {
+    color: #666;
+    font-weight: 400;
+    display: block;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.blog-post .lead {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.blog-post p {
+    font-size: 1.15rem;
+    color: #3a3a3c;
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.blog-post ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.blog-post li {
+    font-size: 1.1rem;
+    color: #3a3a3c;
+    margin-bottom: 12px;
+}
+
+.blog-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+/* Caja de Llamado a la Acción Contextual (A mitad del texto) */
+.blog-cta-box {
+    background-color: var(--secondary-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 0 16px 16px 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-cta-box p {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.blog-inline-cta {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.blog-inline-cta:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+/* Bloque de Cierre con el botón de la App Store */
+.blog-final-cta {
+    background: radial-gradient(circle at bottom left, #fff4e6 0%, #ffffff 80%);
+    border: 1px solid rgba(255, 149, 0, 0.15);
+    padding: 40px 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(255, 149, 0, 0.05);
+}
+
+.blog-final-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-final-cta img {
+    transition: transform 0.2s;
+}
+
+.blog-final-cta img:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE PARA EL BLOG */
+@media (max-width: 768px) {
+    .blog-post h1 { font-size: 2.2rem; }
+    .blog-post h1 .highlight { font-size: 1.6rem; }
+    .blog-post .lead { font-size: 1.2rem; }
+    .blog-cta-box { flex-direction: column; text-align: center; align-items: center; border-radius: 16px; border-left: none; border-top: 4px solid var(--primary-color); }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
