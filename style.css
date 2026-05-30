@@ -177,10 +177,30 @@ footer a {
    ESTILOS ESPECÍFICOS DEL BLOG
    ========================================================================== */
 
+/* Asegúrate de que tus reglas queden así en el CSS: */
+
 .blog-container {
-    max-width: 740px; /* Ancho óptimo de lectura para legibilidad de artículos largos */
-    margin: 50px auto;
-    padding: 0 20px;
+    max-width: 740px;
+    margin: 0 auto 80px auto; /* Cambiamos el margen superior a 0 porque el menú ya empuja */
+    padding: 40px 20px 0 20px;
+    position: relative;
+    display: block; /* Forzamos a que no herede comportamientos flex extraños */
+}
+
+.blog-post {
+    display: block; /* Asegura que el flujo de texto sea vertical y natural */
+}
+
+/* Usamos una clase específica para el título para evitar conflictos con el header de la landing */
+.blog-post .post-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    display: block;
+    position: relative; /* Rompe cualquier herencia de position: fixed o sticky */
 }
 
 .blog-post h1 {
