@@ -313,3 +313,114 @@ footer a {
     .hero-text { margin-bottom: 40px; }
     .hero h1 { font-size: 2.5rem; }
 }
+
+/* ==========================================================================
+   ESTILOS DEL ÍNDICE DEL BLOG (blog.html)
+   ========================================================================== */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.blog-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+.blog-card-meta {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.blog-card h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    letter-spacing: -0.3px;
+}
+
+.blog-card h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.blog-card h2 a:hover {
+    color: var(--primary-color);
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1; /* Hace que todos los textos empujen el botón al fondo por igual */
+}
+
+.read-more {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.blog-card:hover .read-more {
+    color: var(--primary-color);
+}
+
+/* Estilo visual sutil para posts planificados que aún no escribes */
+.future-card {
+    opacity: 0.6;
+    background: var(--secondary-bg);
+    border-style: dashed;
+}
+.future-card h2 a {
+    pointer-events: none;
+}
+
+/* Nuevo estilo para la tarjeta de Próximamente */
+.coming-soon-card {
+    background-color: var(--secondary-bg);
+    border: 2px dashed rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    pointer-events: none; /* Evita que el usuario intente interactuar o hacer clic */
+}
+
+.coming-soon-card:hover {
+    transform: none; /* No se mueve al pasar el mouse */
+    box-shadow: none;
+}
+
+.coming-soon-card h2 {
+    color: #666; /* Texto más tenue para indicar que está inactivo */
+    font-weight: 600;
+}
+
+.coming-soon-footer .badge {
+    display: inline-block;
+    background-color: #8e8e93; /* Gris clásico de iOS para elementos secundarios */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
