@@ -30,9 +30,8 @@ header {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+    background: #ffffff; /* Fondo sólido para que no se traslape el texto al hacer scroll */
+    z-index: 1000; /* Asegura que el menú siempre flote por encima del contenido */
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
